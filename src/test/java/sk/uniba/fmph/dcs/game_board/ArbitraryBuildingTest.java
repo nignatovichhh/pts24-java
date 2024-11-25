@@ -13,7 +13,7 @@ public class ArbitraryBuildingTest {
     public void test_calculation() {
         ArrayList<Effect> buildingResources = new ArrayList<Effect>();
 
-        ArbitraryBuilding building = new ArbitraryBuilding();
+        ArbitraryBuilding building = new ArbitraryBuilding(7);
 
         assertEquals(building.build(buildingResources), OptionalInt.of(0));
         buildingResources.add(Effect.WOOD);
