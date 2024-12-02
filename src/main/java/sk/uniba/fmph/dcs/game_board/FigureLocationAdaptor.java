@@ -54,7 +54,7 @@ public class FigureLocationAdaptor implements InterfaceFigureLocation {
     public boolean skipAction(PlayerOrder player){
         Player adaptedPlayer = getPlayerByOrder(player);
         if(adaptedPlayer == null)
-            return false
+            return false;
         return flInternal.skipAction(adaptedPlayer);
     }
 

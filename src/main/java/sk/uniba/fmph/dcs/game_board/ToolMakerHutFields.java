@@ -136,7 +136,7 @@ public class ToolMakerHutFields {
     }
 
     public boolean canActionOnFields(Player player){
-        return toolMakerFigures.equals(player.getPlayerOrder());
+        return fieldsFigures.equals(player.getPlayerOrder());
     }
 
     public boolean actionFields(Player player){
@@ -165,15 +165,15 @@ public class ToolMakerHutFields {
     public String state(){
         StringBuilder state = new StringBuilder();
         state.append("Player on Tool Maker:");
-        state.append(toolMakerFigures == null ? "None" : " " + toolMakerFigures.toString());
+        state.append(toolMakerFigures == null ? "None" : " " + toolMakerFigures.getOrder());
         state.append("\n");
 
         state.append("Player on Fields:");
-        state.append(fieldsFigures == null ? "None" : " " + fieldsFigures.toString());
+        state.append(fieldsFigures == null ? "None" : " " + fieldsFigures.getOrder());
         state.append("\n");
 
         state.append("Player on Hut:");
-        state.append(hutFigures == null ? "None" : " " + hutFigures.toString());
+        state.append(hutFigures == null ? "None" : " " + hutFigures.getOrder());
         state.append("\n");
 
         return state.toString();
