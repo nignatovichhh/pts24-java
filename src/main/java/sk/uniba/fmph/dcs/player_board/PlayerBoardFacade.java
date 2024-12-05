@@ -12,6 +12,9 @@ public class PlayerBoardFacade implements InterfacePlayerBoardGameBoard, Interfa
     public PlayerBoardFacade(){
         this.playerBoard = new PlayerBoard();
     }
+    public PlayerBoardFacade(PlayerBoard playerBoard){
+        this.playerBoard = playerBoard;
+    }
     @Override
     public void giveEffect(Collection<Effect> stuff){
         List<Effect> resources = new ArrayList<Effect>();

@@ -19,6 +19,15 @@ public class PlayerBoard implements InterfaceGetState {
         playerCC = new PlayerCivilisationCards();
         tribeFedStatus = new TribeFedStatus(playerRF,playerFig);
     }
+    public PlayerBoard(PlayerCivilisationCards playerCC, PlayerTools playerT, TribeFedStatus tribeFedStatus, PlayerFigures playerFig, PlayerResourcesAndFood playerRF) {
+        points = 0;
+        houses = 0;
+        this.playerRF = new PlayerResourcesAndFood();
+        this.playerFig = new PlayerFigures();
+        this.playerT = new PlayerTools();
+        this.playerCC = new PlayerCivilisationCards();
+        this.tribeFedStatus = new TribeFedStatus(playerRF,playerFig);
+    }
     public void addPoints(int points){
         this.points+=points;
     }
