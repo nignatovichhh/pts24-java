@@ -16,4 +16,5 @@ public interface InterfaceFigureLocationInternal {
     HasAction tryToMakeAction(Player player);
     boolean newTurn(); //returns true if end of game is implied by
                         //given location
+    String state();
 }

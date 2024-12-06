@@ -52,4 +52,9 @@ public class PlaceOnFieldsAdaptor implements InterfaceFigureLocationInternal{
     {
         return tmhf.newTurn();
     }
+
+    @Override
+    public String state(){
+        return "";
+    }
 }

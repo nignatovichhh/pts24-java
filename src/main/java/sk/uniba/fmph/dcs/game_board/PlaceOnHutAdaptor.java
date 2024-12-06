@@ -52,4 +52,9 @@ public class PlaceOnHutAdaptor implements InterfaceFigureLocationInternal{
     {
         return tmhf.newTurn();
     }
+
+    @Override
+    public String state(){
+        return tmhf.state();
+    }
 }
